@@ -3,16 +3,27 @@
 numero negaivo y ahi mostrar el resultado.
 */
 
-let sum=0;
+// let total=0;
+
 let counter=0;
+let sumaTotal=0;
+let nroIntroducido = 0;
+
+while(nroIntroducido >= 0){
+    
+    nroIntroducido = prompt('Introduce un numero:');
+    sumaTotal = sumaTotal + Number(nroIntroducido);
+
+    console.log('nroIntroducido: '+ nroIntroducido)
+    console.log('sumaTotal: '+ sumaTotal)
+
+    counter++;
 
 
-
-while(sum >= 0){
-sum = sum + parseInt(prompt('Introduce un numero:'));
-counter++;
 }
 
-alert(`La suma de los numeros introducidos fue de: ${sum}.
-Promedio de numeros introducidos: (${sum/counter}).
+
+
+alert(`La suma de los numeros introducidos fue de: ${sumaTotal}.
+Promedio de numeros introducidos: (${sumaTotal/counter}).
 El numero total de numeros introducidos fue de: ${counter}.`)
